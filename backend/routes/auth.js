@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const passport = require("passport");
 
+
 const CLIENT_URL = "http://localhost:3001/";
 
 router.get("/login/success", (req, res) => {

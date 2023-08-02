@@ -1,13 +1,12 @@
-
 const GoogleStrategy = require("passport-google-oauth20").Strategy;
 const GithubStrategy = require("passport-github2").Strategy;
 const FacebookStrategy = require("passport-facebook").Strategy;
 const passport = require("passport");
 
-
-const GOOGLE_CLIENT_ID ="699812083032-gp5d21sbsgj9anr9tk7gp8md7r7ofd93.apps.googleusercontent.com"
-  
-const GOOGLE_CLIENT_SECRET = "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";
+require("dotenv").config();
+GOOGLE_CLIENT_ID =
+  "699812083032-m1m692lkpg6tmud6oesl6tauga9bcodu.apps.googleusercontent.com";
+GOOGLE_CLIENT_SECRET = "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";
 
 GITHUB_CLIENT_ID = "d91463497f26d8dfad7d";
 GITHUB_CLIENT_SECRET = "fcfdafe396a4519de07f3dd8a8cdef785d7a87d8";
@@ -61,16 +60,3 @@ passport.serializeUser((user, done) => {
 passport.deserializeUser((user, done) => {
   done(null, user);
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
